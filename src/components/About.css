@@ -1,0 +1,129 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: serif;
+    
+    
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-color: #FFF8F3;
+  
+    
+}
+
+.text{
+
+    padding: 40px;
+
+    width: 450px;
+}
+
+.text, p{
+    color: aliceblue;
+    color: black;
+}
+
+.imagecontainer2{
+ 
+    width: 400px;
+}
+#aboutpic{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 30px;
+    border: 2px solid  #7FA1C3;
+    background: transparent;
+    box-shadow: 0px 14px 16px rgb(223, 221, 221);
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+  }
+  
+  .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFF8F3;
+    gap: 30px;
+    overflow: hidden;
+  }
+  
+  .text {
+    padding: 40px;
+    width: 450px;
+    color: #333;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUpFadeIn 1.5s ease forwards 0.5s;
+  }
+  
+  @keyframes slideUpFadeIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .imagecontainer2 {
+    width: 400px;
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+    animation: rotateZoomIn 1.5s ease forwards;
+  }
+  
+  @keyframes rotateZoomIn {
+    0% { transform: scale(0.8) rotate(-5deg); opacity: 0; }
+    100% { transform: scale(1) rotate(0); opacity: 1; }
+  }
+  
+  #aboutpic {
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid #7FA1C3;
+    box-shadow: 0px 14px 16px rgba(223, 221, 221, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  #aboutpic:hover {
+    transform: rotate(3deg) scale(1.03);
+    box-shadow: 0px 20px 25px rgba(223, 221, 221, 0.8);
+  }
+  
+  .text h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #7FA1C3;
+    animation: fadeInColor 1.5s ease forwards;
+  }
+  
+  @keyframes fadeInColor {
+    0% { color: transparent; }
+    100% { color: #7FA1C3; }
+  }
+  
+  .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    animation: textFadeIn 2s ease forwards;
+  }
+  
+  @keyframes textFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  

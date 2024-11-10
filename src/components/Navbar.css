@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #405D72;
+    font-family: serif;
+}
+#logo{
+    font-weight: bolder;
+    font-size:x-large;
+    color: #E4E0E1
+}
+
+.nav, a{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 200px;
+    color: #E4E0E1;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
